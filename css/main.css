@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  p {
+    font-size: larger;
+    margin-right: 30px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #001A1C; /* match footer/info-section */
+  }
+  
+  .header {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+  
+  .header .logo img {
+    height: 150px;
+  }
+  
+  #logo-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0B333B;
+    font-weight: bolder;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('../images/ALPKARBANNER.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: auto;
+    min-height: 90vh;
+    width: 100%;
+    margin-top: -60px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #fff; /* fallback */
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #0B333B;
+  }
+  
+  .hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    margin-top: -140px;
+  }
+  
+  .contact-btn {
+    background-color: #0B333B;
+    color: white;
+    padding: 24px 125px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  /* Info Section */
+  .info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 40px 60px 40px; /* adjusted bottom padding */
+    background-color: #001A1C;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .text-block {
+    flex: 2;
+    min-width: 280px;
+  }
+  
+  .image-block {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .image-block img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+    margin-right: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 0;
+    background-color: #001A1C;
+    color: white;
+    text-align: end;
+    padding: 20px 10px;
+  }
+  
+  .footer a {
+    color: white;
+    font-size: 25px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  /* Tablet Responsive */
+  @media (max-width: 1024px) {
+    .hero-content h1 {
+      font-size: 2.8rem;
+    }
+  
+    .contact-btn {
+      padding: 18px 50px;
+      font-size: 2rem;
+    }
+  
+    .info-section {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+  
+    .image-block {
+      justify-content: center;
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    .image-block img {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 20px;
+    }
+  
+    .nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .hero-content h1 {
+        font-size: 3.4rem;
+      }
+    
+      .contact-btn {
+        font-size: 2.2rem;
+        padding: 16px 40px;
+      }
+  
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+    }
+  
+    .footer a {
+      display: inline-block;
+      margin: 10px 8px;
+    }
+  }
+  
