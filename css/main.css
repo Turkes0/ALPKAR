@@ -46,6 +46,8 @@ body {
     color: #0B333B;
     font-weight: bolder;
   }
+
+
   
   /* Hero Section */
   .hero {
@@ -160,6 +162,19 @@ body {
     .hero-content h1 {
       font-size: 2.8rem;
     }
+
+    .nav a {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
   
     .contact-btn {
       padding: 18px 50px;
@@ -192,6 +207,10 @@ body {
       align-items: flex-start;
       padding: 10px 20px;
     }
+
+     .header {
+    padding: 10px 20px;
+  }
   
 .all-title{
    color: #0B333B;
@@ -209,11 +228,11 @@ body {
     }
   
     .hero-content h1 {
-        font-size: 3.4rem;
+        font-size: 2.4rem;
       }
     
       .contact-btn {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
         padding: 16px 40px;
       }
   
@@ -535,3 +554,5 @@ body {
     gap: 8px;
   }
 }
+
+
